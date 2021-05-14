@@ -13,5 +13,8 @@ else
    result="⚠️ $result"
 fi
 
-echo $result
-
+if [ ! -z $result ]; then
+	echo $result
+else
+	echo "✅ No warning in Mauritius"
+fi
